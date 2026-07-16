@@ -35,7 +35,7 @@ class Settings:
     app_version: str = "1.0.0"
     gemini_api_key: str = _secret_or_env("GEMINI_API_KEY")
     groq_api_key: str = _secret_or_env("GROQ_API_KEY")
-    gemini_model: str = _secret_or_env("GEMINI_MODEL", "gemini-2.5-flash")
+    gemini_model: str = _secret_or_env("GEMINI_MODEL", "gemini-3.5-flash")
     groq_model: str = _secret_or_env("GROQ_MODEL", "llama-3.3-70b-versatile")
     default_ai_provider: str = _secret_or_env("DEFAULT_AI_PROVIDER", "gemini")
     database_url: str = _secret_or_env(

@@ -43,7 +43,7 @@ class CRUDTests(unittest.TestCase):
             user_id=user.id,
             cv_id=cv.id,
             provider="gemini",
-            model_name="gemini-2.5-flash",
+            model_name="gemini-3.5-flash",
             ats_score=75,
             analysis_data={},
         )

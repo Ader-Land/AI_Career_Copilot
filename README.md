@@ -20,7 +20,7 @@ olarak işlenir. AI çıktıları kullanılmadan önce Pydantic şemalarıyla do
 - Yedi bölümlü, Türkçe karakter destekli profesyonel PDF rapor
 - SQLite/SQLAlchemy üzerinde analiz, mektup, soru ve rapor geçmişi
 - Dönen uygulama logları, ayrı hata logu ve API anahtarlarını gizli tutan yapı
-- Google Gemini 2.5 Flash ve Groq Llama 3.3 arasında arayüzden seçim
+- Google Gemini 3.5 Flash ve Groq Llama 3.3 arasında arayüzden seçim
 
 ## Multi-Agent Mimari
 
@@ -48,7 +48,7 @@ denenir; şema dışı sonuçlar veritabanına yazılmaz.
 |---|---|
 | Backend | Python 3.11+ |
 | Frontend | Streamlit |
-| AI | Google Gemini 2.5 Flash, Groq Llama 3.3 70B |
+| AI | Google Gemini 3.5 Flash, Groq Llama 3.3 70B |
 | Veri | SQLite, SQLAlchemy 2 |
 | Dosya | PyMuPDF, pdfplumber, python-docx |
 | Rapor | ReportLab |
@@ -125,7 +125,7 @@ python -m unittest discover -s tests -v
    GEMINI_API_KEY = "gercek_anahtar"
    GROQ_API_KEY = "gercek_anahtar"
    DEFAULT_AI_PROVIDER = "gemini"
-   GEMINI_MODEL = "gemini-2.5-flash"
+   GEMINI_MODEL = "gemini-3.5-flash"
    GROQ_MODEL = "llama-3.3-70b-versatile"
    ```
 

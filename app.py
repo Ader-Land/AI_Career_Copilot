@@ -647,7 +647,7 @@ def render_settings() -> None:
         else 1,
         horizontal=True,
         format_func=lambda value: (
-            "Google Gemini 2.5 Flash" if value == "gemini" else "Groq · Llama 3.3 70B"
+            "Google Gemini 3.5 Flash" if value == "gemini" else "Groq · Llama 3.3 70B"
         ),
     )
     st.session_state.ai_provider = provider
@@ -676,7 +676,7 @@ def main() -> None:
             == "gemini"
             else 1,
             format_func=lambda value: (
-                "Gemini 2.5 Flash" if value == "gemini" else "Groq · Llama 3"
+                "Gemini 3.5 Flash" if value == "gemini" else "Groq · Llama 3"
             ),
         )
         st.session_state.ai_provider = provider
